@@ -32,7 +32,7 @@ function retractor(){
   tablinks = document.getElementsByClassName("tablinks");
 
   for(i=0; i<tablinks.length; i++){
-    tablinks[i].style.opacity = 0;
+    tablinks[i].style.display = "none";
 
   }
 
@@ -45,7 +45,7 @@ function protractor(){
   tablinks = document.getElementsByClassName("tablinks");
 
   for(i=0; i<tablinks.length; i++){
-    tablinks[i].style.opacity = 1;
+    tablinks[i].style.display = "block";
     
   }
 
