@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="CSS/RMSystem.css">
+
+<body>
+
+  
+
+
+  <div class="navigation" id="nav-igation">
+
+    <a href="#" id="navigationclose" onclick="retractor()">&#9776</a>
+
+    <div class="nav-elements">
+      <button class="tablinks" onclick="pageRotator('Home',this)">Dashboard</button>
+    </div>
+
+    <div class="nav-elements">
+      <button class="tablinks" onclick="pageRotator('Statuses',this)">Statuses</button>
+    </div>
+
+    <div class="nav-elements">
+      <button class="tablinks" onclick="pageRotator('About',this)">About</button>
+    </div>
+
+    <div class="nav-elements">
+      <button class="tablinks" onclick="pageRotator('charts',this)">Charts</button>
+    </div>
+
+    
+
+  </div>
+
+  <a href="#" class="nav" id="navigationopen"  onclick="protractor()">&#9776</a>
+
+
+  <div class="maincontainer">
+
+      <div class="content" id="Home">
+          <h1>Dashboard</h1>
+
+            <div class="loading-container">
+
+              <div class="user-container">
+                <div class="display" id="userimg">
+
+                </div>
+
+              </div>
+
+
+              <div class="sentense-container">
+                <div class="loadingsentense">
+
+                </div>
+
+                <div class="loadingsentense">
+
+                </div>
+
+                <div class="loadingsentense">
+
+                </div>
+              </div>
+            </div>
+          
+      </div>
+
+      <div class="content" id="Statuses">
+          <h1>Statuses</h1>
+      </div>
+
+      <div class="content" id="About">
+          <h1>About</h1>
+      </div>
+
+      <div class="content" id="charts">
+          <h1>Charts</h1>
+      </div>
+
+  </div>
+
+  <div class="footer">
+
+  </div>
+
+
+  <script src="JS/RMSystem.js"></script>
+  
+</body>
+</html>

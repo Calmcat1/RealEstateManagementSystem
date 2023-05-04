@@ -1,0 +1,139 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+
+ @keyframes loadingAnims{
+  0%{
+    opacity: 1;
+    
+  }
+
+  100%{
+    opacity: 0.5;
+  }
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+body{
+  display: flex;
+  margin: 0 0 0 0;
+  font-family: Roboto;
+}
+
+h1{
+  color: black;
+  height: 2.4em;
+}
+
+button,a{
+  cursor: pointer;
+  color: white;
+  font-weight: 400;
+  background-color: transparent;
+  border: none;
+  font-size: 2.4em;
+  padding: 10px 20px 10px 20px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.nav{
+  color: black;
+  position: fixed;
+  z-index: 1;
+}
+
+.maincontainer{
+  display: flex;
+  width: 120vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  display: none;
+  padding-left: 10px;
+  width: 70vw;
+  height: 100vh;
+  
+}
+
+.navigation{
+  display: flex;
+  width: 0;
+  position: relative;
+  justify-content: flex-start;
+  gap: 50px;
+  flex-direction: column;
+  padding-top: 50px;
+  background-color: green;
+  z-index: 3;
+  transition: 1s width;
+}
+
+.tablinks{
+  transition: 1s opacity;
+}
+
+.display,.loadingsentense{
+  background-color: rgba(0, 0, 0, 0.247);
+  height: 100px;
+  width: 100px;
+  
+  
+}
+
+#userimg{
+  border-radius: 100px;
+  animation: 1s loadingAnims infinite;
+  margin-bottom: 20px;
+
+}
+
+.loadingsentense{
+
+  
+  height: 10px;
+  width: 100%;
+  animation: 1s loadingAnims infinite;
+
+}
+
+.loading-container{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.sentense-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.user-container{
+  display: flex;
+}
+
+
+@media only display and(max-width: 425px){
+
+  .loadingsentense{
+    width: 200px;
+  }
+ 
+}
+
+
+
+
+
+
