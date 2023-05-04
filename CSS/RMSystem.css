@@ -123,7 +123,9 @@ a{
   display: flex;
 }
 
-
+#navigationclose{
+  display: none;
+}
 
 @media only display and(max-width: 425px){
 
