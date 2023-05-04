@@ -36,7 +36,7 @@ function retractor(){
 
   }
 
-  document.getElementByID("navigationclose").style.display = "none";
+  document.getElementById("navigationclose").style.display = "none";
 }
 
 function protractor(){
@@ -49,6 +49,6 @@ function protractor(){
     
   }
 
-  document.getElementByID("navigationclose").style.display = "block";
+  document.getElementById("navigationclose").style.display = "block";
 }
 

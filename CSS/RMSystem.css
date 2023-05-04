@@ -68,6 +68,7 @@ a{
 .navigation{
   display: flex;
   width: 0;
+  height: 100vh;
   position: relative;
   justify-content: flex-start;
   gap: 50px;
