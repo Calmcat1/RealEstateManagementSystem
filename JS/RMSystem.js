@@ -35,6 +35,8 @@ function retractor(){
     tablinks[i].style.opacity = 0;
 
   }
+
+  document.getElementByID("navigationclose").style.display = "none";
 }
 
 function protractor(){
@@ -46,5 +48,7 @@ function protractor(){
     tablinks[i].style.opacity = 1;
     
   }
+
+  document.getElementByID("navigationclose").style.display = "block";
 }
 
