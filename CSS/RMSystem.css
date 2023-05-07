@@ -68,7 +68,6 @@ a{
 .navigation{
   display: flex;
   width: 0;
-  height: 100vh;
   position: relative;
   justify-content: flex-start;
   gap: 50px;
@@ -125,7 +124,8 @@ a{
 }
 
 #navigationclose{
-  display: none;
+  opacity: 0;
+  transition: 1s opacity;
 }
 
 @media only display and(max-width: 425px){

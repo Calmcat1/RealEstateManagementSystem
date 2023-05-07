@@ -32,11 +32,10 @@ function retractor(){
   tablinks = document.getElementsByClassName("tablinks");
 
   for(i=0; i<tablinks.length; i++){
-    tablinks[i].style.display = "none";
-
+    tablinks[i].style.opacity = 0;
   }
 
-  document.getElementById("navigationclose").style.display = "none";
+  document.getElementById("navigationclose").style.opacity = 0;
 }
 
 function protractor(){
@@ -45,10 +44,10 @@ function protractor(){
   tablinks = document.getElementsByClassName("tablinks");
 
   for(i=0; i<tablinks.length; i++){
-    tablinks[i].style.display = "block";
+    tablinks[i].style.opacity = 1;
     
   }
 
-  document.getElementById("navigationclose").style.display = "block";
+  document.getElementById("navigationclose").style.opacity = 1;
 }
 
