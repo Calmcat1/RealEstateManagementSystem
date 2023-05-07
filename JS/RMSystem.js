@@ -33,9 +33,12 @@ function retractor(){
 
   for(i=0; i<tablinks.length; i++){
     tablinks[i].style.opacity = 0;
+    tablinks[i].style.pointerEvents = "none"
   }
 
   document.getElementById("navigationclose").style.opacity = 0;
+  document.getElementById("navigationclose").style.pointerEvents = "none"
+ 
 }
 
 function protractor(){
@@ -45,9 +48,10 @@ function protractor(){
 
   for(i=0; i<tablinks.length; i++){
     tablinks[i].style.opacity = 1;
-    
+    tablinks[i].style.pointerEvents = "auto"
   }
 
   document.getElementById("navigationclose").style.opacity = 1;
+  document.getElementById("navigationclose").style.pointerEvents = "auto"
 }
 
