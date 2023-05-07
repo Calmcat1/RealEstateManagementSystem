@@ -52,6 +52,37 @@ function protractor(){
   }
 
   document.getElementById("navigationclose").style.opacity = 1;
-  document.getElementById("navigationclose").style.pointerEvents = "auto"
+  document.getElementById("navigationclose").style.pointerEvents = "auto";
 }
+
+function darkModeSwitcherLeft(container){
+  let innercont;
+
+  innercont = document.getElementById(container);
+
+  if(innercont.style.left == "50px"){
+      innercont.style.left = "0px"
+      document.getElementById("nav-igation").style.backgroundColor = "green";
+      document.getElementById("maincontainer").style.backgroundColor = "white";
+
+      const heading = document.getElementsByTagName("h1");
+
+      for(i=0; i<heading.length; i++){
+        heading[i].style.color = "black";
+      }
+  }
+  else{
+    innercont.style.left = "50px"
+    document.getElementById("nav-igation").style.backgroundColor = "black";
+    document.getElementById("maincontainer").style.backgroundColor ="rgba(0, 0, 0, 0.870)";
+    const heading = document.getElementsByTagName("h1");
+
+    for(i=0; i<heading.length; i++){
+      heading[i].style.color = "white";
+    }
+  }
+
+
+}
+
 
